@@ -8,10 +8,64 @@
     tools:context=".GetStarted"
     android:background="@color/primary">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top"
+        android:orientation="vertical"> <!-- Aligns content to the top -->
+
+        <TextView
+            android:id="@+id/welcometv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="70dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Welcome to Proctorly!"
+            android:textSize="20sp"
+            app:layout_constraintVertical_bias="0.071" />
+
+        <ImageView
+            android:id="@+id/proctorlyiv"
+            android:layout_width="213dp"
+            android:layout_height="173dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/proctorly" />
+
+        <ImageView
+            android:id="@+id/textimgv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="30dp"
+            app:srcCompat="@drawable/text" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/tap" />
+
+        <Button
+            android:id="@+id/btngetstarted"
+            android:layout_width="190dp"
+            android:layout_height="65dp"
+            android:textColor="@color/white"
+
+            android:backgroundTint="@color/login"
+            android:text="Get Started"
+            android:textSize="20sp"
+            android:layout_margin="60dp"
+            android:layout_gravity="center"
+            app:layout_constraintVertical_bias="0.848"
+            />
+
+
+
+
+    </LinearLayout>
 
 
 </LinearLayout>
