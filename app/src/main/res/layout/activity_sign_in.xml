@@ -2,13 +2,13 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/primary"
-    android:orientation="vertical"
+    tools:context=".SignIn"
     android:weightSum="10"
-    tools:context=".Login">
+    android:background="@color/primary">
 
 
     <LinearLayout
@@ -24,11 +24,11 @@
             android:layout_margin="50dp"
             android:layout_gravity="center"
             app:srcCompat="@drawable/proctorly">
-            
+
         </ImageView>
 
     </LinearLayout>
-    
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -39,7 +39,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Log in"
+            android:text="Sign in"
             android:textSize="20sp"
             android:layout_marginRight="280dp">
         </TextView>
@@ -54,7 +54,27 @@
         android:gravity="center_horizontal">
 
         <EditText
-            android:id="@+id/usernmet"
+            android:id="@+id/emailmt"
+            android:layout_width="350dp"
+            android:layout_height="63dp"
+            android:layout_gravity="center"
+            android:hint="Email"
+            android:inputType="text">
+
+        </EditText>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <EditText
+            android:id="@+id/usrnet"
             android:layout_width="350dp"
             android:layout_height="63dp"
             android:layout_gravity="center"
@@ -93,47 +113,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.5">
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.9"
-        android:gravity="center_horizontal">
-
-        <Button
-            android:id="@+id/loginbtn"
-            android:layout_width="190dp"
-            android:layout_height="65dp"
-            android:layout_gravity="center"
-            android:backgroundTint="@color/login"
-            android:fontFamily="@font/poppins"
-            android:text="Log In"
-            android:textColor="@color/white"
-            android:textSize="26dp">
-
-        </Button>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.3"
-        android:gravity="center_horizontal">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:text="Or"
-            android:textSize="18sp"
-            android:fontFamily="@font/poppins"
-            android:gravity="center_horizontal">
-
-        </TextView>
-
-
+        android:layout_weight="0.6"
+        android:orientation="horizontal">
     </LinearLayout>
 
     <LinearLayout
