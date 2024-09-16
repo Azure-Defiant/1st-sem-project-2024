@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">Proctorly</string>
     <string name="log_in">Log in</string>
+    <string name="navigationbar">Open navigation menu</string>
+    <string name="home">home menu</string>
+    <string name="records">records button</string>
+    <string name="history">history button</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

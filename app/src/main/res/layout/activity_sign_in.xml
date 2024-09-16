@@ -8,7 +8,7 @@
     android:layout_height="match_parent"
     tools:context=".SignIn"
     android:weightSum="10"
-    android:background="@color/primary">
+    android:background="@drawable/background">
 
 
     <LinearLayout
