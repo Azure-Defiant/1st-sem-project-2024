@@ -8,7 +8,8 @@
     tools:context=".Question"
     android:weightSum="10"
     android:orientation="vertical"
-    android:background="@drawable/background">
+    android:background="@drawable/background"
+    tools:ignore="Overdraw">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -22,6 +23,7 @@
             android:layout_height="173dp"
             android:layout_margin="50dp"
             android:layout_gravity="center"
+            android:contentDescription="TODO"
             app:srcCompat="@drawable/proctorly">
 
         </ImageView>
@@ -40,7 +42,8 @@
             android:layout_height="wrap_content"
             android:text="Are you a?"
             android:textSize="22sp"
-            android:gravity="center" />
+            android:gravity="center"
+            tools:ignore="HardcodedText" />
     </LinearLayout>
 
     <LinearLayout
@@ -59,7 +62,8 @@
             android:text="Student"
             android:textSize="20sp"
             android:layout_margin="60dp"
-            android:layout_gravity="center" />
+            android:layout_gravity="center"
+            tools:ignore="HardcodedText" />
     </LinearLayout>
 
     <LinearLayout
@@ -74,7 +78,8 @@
             android:layout_height="wrap_content"
             android:text="Or"
             android:textSize="20sp"
-            android:gravity="center" />
+            android:gravity="center"
+            tools:ignore="HardcodedText" />
     </LinearLayout>
 
     <LinearLayout
@@ -85,7 +90,6 @@
         android:gravity="center">
 
         <Button
-            android:id="@+id/teacherbtn"
             android:layout_width="190dp"
             android:layout_height="65dp"
             android:layout_gravity="center"
@@ -93,7 +97,8 @@
             android:backgroundTint="@color/login"
             android:text="Teacher"
             android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
     </LinearLayout>
 
 
