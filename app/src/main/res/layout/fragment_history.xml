@@ -3,13 +3,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".History">
+    tools:context=".History"
+    android:background="@color/primary">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
+
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="History"
-        tools:ignore="HardcodedText" />
+        android:layout_height="65dp"
+        android:background="@color/login"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="History"
+            android:textSize="34dp"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_marginLeft="13dp"
+            android:textColor="@color/white">
+
+        </TextView>
+
+
+    </LinearLayout>
+
 
 </FrameLayout>

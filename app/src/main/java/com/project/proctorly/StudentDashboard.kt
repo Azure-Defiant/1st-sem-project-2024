@@ -7,53 +7,44 @@ import com.project.proctorly.databinding.ActivityStudentDashboardBinding
 
 class StudentDashboard : AppCompatActivity() {
 
-    private lateinit var binding : ActivityStudentDashboardBinding
+    private lateinit var binding: ActivityStudentDashboardBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityStudentDashboardBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        class YourActivity : AppCompatActivity() {
+        // Set default fragment
+        if (savedInstanceState == null) {
+            replaceFragment(Home()) // Replace with your default fragment
+        }
 
-            private lateinit var binding: ActivityStudentDashboardBinding
-
-            override fun onCreate(savedInstanceState: Bundle?) {
-                super.onCreate(savedInstanceState)
-                binding =
-                    ActivityStudentDashboardBinding.inflate(layoutInflater)
-                setContentView(binding.root)
-
-                binding.bottomnavigationview.setOnItemSelectedListener { menuItem ->
-                    when (menuItem.itemId) {
-                        R.id.navHome -> {
-                            replaceFragment(Home())
-                            true
-                        }
-
-                        R.id.navRecords -> {
-                            replaceFragment(Records())
-                            true
-                        }
-
-                        R.id.navHistory -> {
-                            replaceFragment(History())
-                            true
-                        }
-
-                        else -> false
-                    }
+        // Set up the BottomNavigationView listener
+        binding.bottomnavigationview.setOnItemSelectedListener { menuItem ->
+            when (menuItem.itemId) {
+                R.id.navHome -> {
+                    replaceFragment(Home())
+                    true
                 }
-            }
-
-
-            private fun replaceFragment(fragment: Fragment) {
-                val fragmentManager = supportFragmentManager
-                val fragmentTransaction = fragmentManager.beginTransaction()
-                fragmentTransaction.replace(R.id.framelayout, fragment)
-                fragmentTransaction.commit()
+                R.id.navRecords -> {
+                    replaceFragment(Records())
+                    true
+                }
+                R.id.navHistory -> {
+                    replaceFragment(History())
+                    true
+                }
+                else -> false
             }
         }
     }
 
+    // Function to replace fragments
+    private fun replaceFragment(fragment: Fragment) {
+        val fragmentManager = supportFragmentManager
+        val fragmentTransaction = fragmentManager.beginTransaction()
+        fragmentTransaction.replace(R.id.framelayout, fragment)
+        fragmentTransaction.addToBackStack(null) // Optional: adds the transaction to the back stack
+        fragmentTransaction.commit()
+    }
 }

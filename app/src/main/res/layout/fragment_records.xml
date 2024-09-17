@@ -3,13 +3,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Records">
+    tools:context=".Records"
+    android:background="@color/primary">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <LinearLayout
+
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Records"
-        tools:ignore="HardcodedText" />
+        android:layout_height="65dp"
+        android:background="@color/login"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Records"
+            android:textSize="34dp"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_marginLeft="13dp"
+            android:textColor="@color/white">
+
+        </TextView>
+
+
+    </LinearLayout>
+
+
 
 </FrameLayout>
