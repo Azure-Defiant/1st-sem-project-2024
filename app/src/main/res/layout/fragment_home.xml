@@ -24,9 +24,116 @@
             android:src="@drawable/navbar_foreground">
 
         </ImageButton>
+    </LinearLayout>
 
+
+    <ImageView
+        android:layout_width="78dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="45dp"
+        android:src="@drawable/profileimage">
+    </ImageView>
+
+
+    <TextView
+        android:layout_width="105dp"
+        android:layout_height="30dp"
+        android:text="Welcome"
+        android:textSize="20sp"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="140dp">
+
+    </TextView>
+
+
+    <TextView
+        android:layout_width="105dp"
+        android:layout_height="30dp"
+        android:text="Student"
+        android:textSize="16sp"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/black"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="140dp">
+
+    </TextView>
+
+
+    <ScrollView
+        android:layout_width="400dp"
+        android:layout_height="350dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp">
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="350dp"
+        android:orientation="vertical">
+    <Button
+        android:layout_width="340dp"
+        android:layout_height="90dp"
+        android:text="Java"
+        android:textSize="30dp"
+        android:fontFamily="@font/poppins"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="@color/login"/>
+
+
+        <Button
+            android:layout_width="340dp"
+            android:layout_height="90dp"
+            android:text="Kotlin"
+            android:textSize="30dp"
+            android:fontFamily="@font/poppins"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/login"/>
+
+        <Button
+            android:layout_width="340dp"
+            android:layout_height="90dp"
+            android:text="Python"
+            android:textSize="30dp"
+            android:fontFamily="@font/poppins"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/login"/>
+
+
+        <Button
+            android:layout_width="340dp"
+            android:layout_height="90dp"
+            android:text="C#"
+            android:textSize="30dp"
+            android:fontFamily="@font/poppins"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/login"/>
+
+        <Button
+            android:layout_width="340dp"
+            android:layout_height="90dp"
+            android:text="C++"
+
+            android:textSize="30dp"
+            android:fontFamily="@font/poppins"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/login"/>
+
+
+        <Button
+            android:layout_width="340dp"
+            android:layout_height="90dp"
+            android:text="Ruby"
+            android:textSize="30dp"
+            android:fontFamily="@font/poppins"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/login"/>
 
     </LinearLayout>
+    </ScrollView>
+
+
 
 
 
