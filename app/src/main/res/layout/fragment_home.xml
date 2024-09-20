@@ -8,23 +8,7 @@
 
     <!-- TODO: Update blank fragment layout -->
 
-    <LinearLayout
 
-        android:layout_width="match_parent"
-        android:layout_height="65dp"
-        android:background="@color/login"
-        android:orientation="vertical">
-
-        <ImageButton
-            android:layout_width="70dp"
-            android:layout_height="50dp"
-            android:layout_margin="9dp"
-            android:background="@android:color/transparent"
-            android:contentDescription="@string/navigationbar"
-            android:src="@drawable/navbar_foreground">
-
-        </ImageButton>
-    </LinearLayout>
 
 
     <ImageView
